@@ -1,0 +1,32 @@
+{
+    "meals": [
+        {
+            "name": "Pates bolognaise",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["pâtes", "sauce bolognaise"]
+        },
+        {
+            "name": "Poulet légumes",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["poulet", "légumes de saison"]
+        },
+        {
+            "name": "Taboulé maison",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "été",
+            "ingredients": ["semoule", "tomate", "oignon", "raisin secs", "huile d'olive", "concombre", "persil"]
+        },
+        {
+            "name": "Soupe à la carotte",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "hiver",
+            "ingredients": ["carotte", "gingembre"]
+        }
+    ]
+}
