@@ -1,5 +1,6 @@
 import json
 import jmespath
+import random
 from time import *
 
 ## Demande nombre de plat
@@ -20,7 +21,9 @@ data = json.load(meals)
 if mode.upper() == "Y":
     saison = saison(int(strftime("%m", localtime())))
     platSaison = jmespath.search("[?(season == 'all' || season == '"+ saison +"')].name", data['meals'])
+    platList = random.choices(platSaison, k=nbrPlat)
 else:
     platSaison = jmespath.search("[].name", data['meals'])
+    platList = random.choices(platSaison, k=nbrPlat)
 
-print(platSaison)
+print(platList)
