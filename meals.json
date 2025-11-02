@@ -5,7 +5,7 @@
             "difficulty": "facile",
             "time": "rapide",
             "season": "all",
-            "ingredients": ["pâtes", "sauce bolognaise"]
+            "ingredients": ["pates", "sauce bolognaise"]
         },
         {
             "name": "Poulet légumes",
@@ -27,6 +27,258 @@
             "time": "rapide",
             "season": "hiver",
             "ingredients": ["carotte", "gingembre"]
+        },
+        {
+            "name": "Salade hivernale",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "hiver",
+            "ingredients": ["carotte", "ail", "pois chiche", "mais", "oignon rouge", "semoule"]
+        },
+        {
+            "name": "Oeuf sur le plat",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["oeuf", "féculent", "légumes"]
+        },
+        {
+            "name": "Saucisse lentilles",
+            "difficulty": "facile",
+            "time": "long",
+            "season": "all",
+            "ingredients": ["saucisse", "lentilles", "carotte", "oignon"]
+        },
+        {
+            "name": "Chil sin carne",
+            "difficulty": "facile",
+            "time": "long",
+            "season": "all",
+            "ingredients": ["Tomate pelée", "oignon", "riz", "maïs", "haricots rouges", "carotte"]
+        },
+        {
+            "name": "Chili con carne",
+            "difficulty": "facile",
+            "time": "long",
+            "season": "all",
+            "ingredients": ["Tomate pelée", "oignon", "maïs", "viande haché", "haricots rouges"]
+        },
+        {
+            "name": "Pates boeuf pois chiche légumes",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["pates", "viande haché", "tomate", "oignon", "carotte", "pois chiche"]
+        },
+        {
+            "name": "Pates poulet légumes",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["poulet", "pates", "légumes"]
+        },
+        {
+            "name": "Omelette pomme de terre",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["oeuf", "pomme de terre", "oignon"]
+        },
+        {
+            "name": "Omelette champignon salade",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["oeuf", "champignon", "salade"]
+        },
+        {
+            "name": "Wrap poulet",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["wrap", "poulet", "salade", "tartare", "maïs", "oignon"]
+        },
+        {
+            "name": "Wrap poulet",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["wrap", "poulet", "salade", "crème fraiche", "maïs", "oignon", "poivron", "fromage rapé"]
+        },
+        {
+            "name": "Wrap poulet été",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "été",
+            "ingredients": ["wrap", "poulet", "salade", "tartare", "maïs", "oignon rouge", "concombre", "tomate"]
+        },
+        {
+            "name": "Wrap végétarien",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "été",
+            "ingredients": ["wrap", "chèvre", "salade", "crème fraiche", "maïs", "poivron", "concombre", "tomate"]
+        },
+        {
+            "name": "Burger",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["pain burger", "viande haché", "salade", "chedar", "oignon"]
+        },
+        {
+            "name": "Salade de pates",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "été",
+            "ingredients": ["pates", "mozarella", "pois chiche", "poivron", "maïs", "concombre", "tomtate"]
+        },
+        {
+            "name": "Salade de blé",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["blé", "poulet", "pois chiche", "haricots rouges", "maïs", "oignon rouge", "fromage"]
+        },
+        {
+            "name": "Velouté brocoli",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "hiver",
+            "ingredients": ["brocoli", "ail", "tartare"]
+        },
+        {
+            "name": "Soupe légumes",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "hiver",
+            "ingredients": ["pomme de terre", "oignon", "poireaux", "carotte"]
+        },
+        {
+            "name": "Riz pois chiche",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "hiver",
+            "ingredients": ["riz", "pois chiche", "carotte", "poireaux", "ail", "cumin"]
+        },
+        {
+            "name": "Pasta e lenticchie",
+            "difficulty": "moyen",
+            "time": "long",
+            "season": "hiver",
+            "ingredients": ["pates", "lentilles", "ail", "carotte", "oignon", "lardon", "poireaux", "purée de tomates"]
+        },
+        {
+            "name": "Wrap poulet",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["wrap", "poulet", "salade", "tartare", "maïs", "oignon"]
+        },
+        {
+            "name": "Galette de pomme de terre",
+            "difficulty": "facile",
+            "time": "long",
+            "season": "all",
+            "ingredients": ["pomme de terre", "oeuf", "oignon", "huile d'olive"]
+        },
+        {
+            "name": "Galette au jambon",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["galette sarazin", "jambon", "fromage", "oignon"]
+        },
+        {
+            "name": "Galette chèvre épinard",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["galette sarazin", "chèvre", "epinard"]
+        },
+        {
+            "name": "Farfalles fondue au poireaux",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "hiver",
+            "ingredients": ["pates", "poireaux", "crème fraiche"]
+        },
+        {
+            "name": "Riz sauté à la tomate",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["riz", "purée de tomates", "lardon", "oignon", "champignon"]
+        },
+        {
+            "name": "Pates au gésier",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["pates", "gésier"]
+        },
+        {
+            "name": "Gnocchis épinards",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["gnocchis", "epinard", "crème fraiche", "chèvre"]
+        },
+        {
+            "name": "Gnocchis à la parisienne",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["gnocchis", "champignon", "crème fraiche", "jambon", "fromage"]
+        },
+        {
+            "name": "Rougail saucisse",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "hiver",
+            "ingredients": ["riz", "purée de tomates", "oignon", "ail", "saucisse"]
+        },
+        {
+            "name": "Farfalles fondue au poireaux",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "hiver",
+            "ingredients": ["pates", "poireaux", "crème fraiche"]
+        },
+        {
+            "name": "Crudités",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "all",
+            "ingredients": ["carotte", "salade", "oignon rouge", "poireaux", "tomate", "concombre", "jambon"]
+        },
+        {
+            "name": "Pates pesto",
+            "difficulty": "facile",
+            "time": "rapide",
+            "season": "all",
+            "ingredients": ["pates", "pesto"]
+        },
+        {
+            "name": "Dahl de lentilles",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "hiver",
+            "ingredients": ["lentilles corail", "Tomate pelée", "riz", "ail", "oignon", "carotte"]
+        },
+        {
+            "name": "Galette de courgette",
+            "difficulty": "facile",
+            "time": "long",
+            "season": "été",
+            "ingredients": ["courgette", "oeuf"]
+        },
+        {
+            "name": "Poulet légumes d'été",
+            "difficulty": "facile",
+            "time": "moyen",
+            "season": "été",
+            "ingredients": ["poulet", "moutarde", "tomate", "poivron", "courgette"]
         }
     ]
 }
