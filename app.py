@@ -13,6 +13,17 @@ def saison(month):
     else:
         return "été"
 
+def listeCourse(platList):
+    course = []
+    for plat in platList:
+        for ingredient in plat['ingredients']:
+            if ingredient not in course:
+                course.append(ingredient)
+    print(course)
+
+def listePlat(platList):
+    return jmespath.search("[].name", platList)
+
 # Chargemetn fichier JSON
 meals = open("meals.json", 'r', encoding='utf-8')
 data = json.load(meals)
@@ -20,10 +31,12 @@ data = json.load(meals)
 ## Mode saison
 if mode.upper() == "Y":
     saison = saison(int(strftime("%m", localtime())))
-    platSaison = jmespath.search("[?(season == 'all' || season == '"+ saison +"')].name", data['meals'])
-    platList = random.choices(platSaison, k=nbrPlat)
+    platSaison = jmespath.search("[?(season == 'all' || season == '"+ saison +"')]", data['meals'])
+    platList = random.sample(platSaison, k=nbrPlat) ## Tirage sans remise
 else:
-    platSaison = jmespath.search("[].name", data['meals'])
-    platList = random.choices(platSaison, k=nbrPlat)
+    platList = random.sample(data['meals'], k=nbrPlat) ## Tirage sans remise
 
-print(platList)
+
+print(listePlat(platList))
+listeCourse(platList)
+
