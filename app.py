@@ -3,10 +3,6 @@ import jmespath
 import random
 from time import *
 
-## Demande nombre de plat
-nbrPlat = int(input("Combien de plat voulez vous générer : "))
-mode = input("Voulez vous des plats de saison Y/N : ")
-
 def saison(month):
     if (month > 9 and month <=12) or (month >=1 and month < 4):
         return "hiver"
@@ -15,16 +11,30 @@ def saison(month):
 
 def listeCourse(platList):
     course = []
+    fileCourse = open('liste-course.txt', 'w')
     for plat in platList:
         for ingredient in plat['ingredients']:
             if ingredient not in course:
                 course.append(ingredient)
-    print(course)
+                fileCourse.write("\n" + ingredient)
+    fileCourse.close()
+
 
 def listePlat(platList):
-    return jmespath.search("[].name", platList)
+    plats = jmespath.search("[].[name,ingredients]", platList)
+    filePlat = open('repas.txt', 'w')
+    for plat in plats:
+        filePlat.write("\n" + plat[0])
+        for ingredient in plat[1]:
+            filePlat.write("\n\t" + ingredient)
+    filePlat.close()
 
-# Chargemetn fichier JSON
+
+## Demande nombre de plat
+nbrPlat = int(input("Combien de plat voulez vous générer : "))
+mode = input("Voulez vous des plats de saison Y/N : ")
+
+# Chargement fichier JSON
 meals = open("meals.json", 'r', encoding='utf-8')
 data = json.load(meals)
 
@@ -37,6 +47,6 @@ else:
     platList = random.sample(data['meals'], k=nbrPlat) ## Tirage sans remise
 
 
-print(listePlat(platList))
+listePlat(platList)
 listeCourse(platList)
 
