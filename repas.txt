@@ -1,38 +1,26 @@
 
+Pasta e lenticchie
+	pates
+	lentilles
+	ail
+	carotte
+	oignon
+	lardon
+	poireaux
+	purée de tomates
+Riz pois chiche
+	riz
+	pois chiche
+	carotte
+	poireaux
+	ail
+	cumin
+Velouté brocoli
+	brocoli
+	ail
+	tartare
 Soupe légumes
 	pomme de terre
 	oignon
 	poireaux
 	carotte
-Omelette pomme de terre
-	oeuf
-	pomme de terre
-	oignon
-Wrap poulet
-	wrap
-	poulet
-	salade
-	crème fraiche
-	maïs
-	oignon
-	poivron
-	fromage rapé
-Pates au gésier
-	pates
-	gésier
-Saucisse lentilles
-	saucisse
-	lentilles
-	carotte
-	oignon
-Chil sin carne
-	Tomate pelée
-	oignon
-	riz
-	maïs
-	haricots rouges
-	carotte
-Pates poulet légumes
-	poulet
-	pates
-	légumes
