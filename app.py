@@ -1,7 +1,8 @@
-import json
 import jmespath
-import random
 from time import *
+from Meals import *
+
+Food = Meals()
 
 def getSaison(month):
     if (month > 9 and month <=12) or (month >=1 and month < 4):
@@ -9,6 +10,7 @@ def getSaison(month):
     else:
         return "été"
 
+## Génération de la liste de course
 def listeCourse(platList):
     course = []
     fileCourse = open('liste-course.txt', 'w')
@@ -19,8 +21,8 @@ def listeCourse(platList):
                 fileCourse.write("\n" + ingredient)
     fileCourse.close()
 
-
-def listePlat(platList):
+## Génération de la liste de repas
+def listeRepas(platList):
     plats = jmespath.search("[].[name,ingredients]", platList)
     filePlat = open('repas.txt', 'w')
     for plat in plats:
@@ -29,26 +31,14 @@ def listePlat(platList):
             filePlat.write("\n\t" + ingredient)
     filePlat.close()
 
-def GenerateMeals(ingredient = ""):
-    # Chargement fichier JSON
-    meals = open("meals.json", 'r', encoding='utf-8')
-    data = json.load(meals)
-    # Vérif
-    if ingredient != "":
-        print(ingredient)
+def modeSaison():
+    # Recup saison
+    mode = input("Voulez vous des plats de saison Y/N : ")
+    # Mode saison
+    if mode.upper() == "Y":
+        return getSaison(int(strftime("%m", localtime()))) 
     else:
-        ## Demande nombre de plat
-        nbrPlat = int(input("Combien de plat voulez vous générer : "))
-        mode = input("Voulez vous des plats de saison Y/N : ")
-        # Mode saison
-        if mode.upper() == "Y":
-            saison = getSaison(int(strftime("%m", localtime())))
-            platSaison = jmespath.search("[?(season == 'all' || season == '"+ saison +"')]", data['meals'])
-            platList = random.sample(platSaison, k=nbrPlat) ## Tirage sans remise
-        else:
-            platList = random.sample(data['meals'], k=nbrPlat) ## Tirage sans remise
-        listePlat(platList)
-        listeCourse(platList)
+        return ""
 
 while (True):
     print("=====MealGenerator=====")
@@ -60,13 +50,20 @@ while (True):
     
     match choisse:
         case 1:
-            GenerateMeals()
+            nbrPlat = int(input("Combien de plat voulez vous générer : "))
+            saison = modeSaison()
+            listeRepas(Food.GenerateMeals(nbrPlat, saison))
+            listeCourse(Food.GenerateMeals(nbrPlat, saison))
         case 2:
-            print("2")
+            saison = modeSaison()
+            print(Food.getAll(saison))
         case 3:
             ingredient = input("Choisir un ingrédient: ")
-            print(GenerateMeals(ingredient))
+            print(Food.getByIngredient(ingredient))
         case 9:
             break
         case _:
-            GenerateMeals()
+            nbrPlat = int(input("Combien de plat voulez vous générer : "))
+            saison = modeSaison()
+            listeRepas(Food.GenerateMeals(nbrPlat, saison))
+            listeCourse(Food.GenerateMeals(nbrPlat, saison))

@@ -5,5 +5,4 @@ Mealgenerator est une application développé en Python qui a pour objectif d'ai
 Manipulation du JSON => jmespath
 
 # TODO
-- [ ] Ajout fonctionnalité lister les repas par saison
-- [ ] Option relaunch pour relancer un tirage avec les même paramètres
+

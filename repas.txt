@@ -1,26 +1,57 @@
 
-Pasta e lenticchie
-	pates
-	lentilles
-	ail
-	carotte
-	oignon
-	lardon
-	poireaux
-	purée de tomates
-Riz pois chiche
-	riz
+Galette chèvre épinard
+	galette sarazin
+	chèvre
+	epinard
+Salade de blé
+	blé
+	poulet
 	pois chiche
-	carotte
-	poireaux
-	ail
-	cumin
+	haricots rouges
+	maïs
+	oignon rouge
+	fromage
 Velouté brocoli
 	brocoli
 	ail
 	tartare
-Soupe légumes
+Crudités
+	carotte
+	salade
+	oignon rouge
+	poireaux
+	tomate
+	concombre
+	jambon
+Galette au jambon
+	galette sarazin
+	jambon
+	fromage
+	oignon
+Pates pesto
+	pates
+	pesto
+Wrap végétarien
+	wrap
+	chèvre
+	salade
+	crème fraiche
+	maïs
+	poivron
+	concombre
+	tomate
+Omelette pomme de terre
+	oeuf
 	pomme de terre
 	oignon
-	poireaux
-	carotte
+Wrap poulet
+	wrap
+	poulet
+	salade
+	tartare
+	maïs
+	oignon
+Oeuf sur le plat
+	oeuf
+	féculent
+	légumes
