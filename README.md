@@ -4,5 +4,8 @@ Mealgenerator est une application développé en Python qui a pour objectif d'ai
 ## Librairies
 Manipulation du JSON => jmespath
 
-# TODO
-
+## Compilation
+Afin de rendre l'outil plus simple d'utilisation, il est possible de le compiler avec `pyinstaller`
+```
+pyinstaller -F app.py
+```
